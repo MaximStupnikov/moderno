@@ -66,3 +66,51 @@
 		color: #fff;
 	}
 }
+.search {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	min-height: 533px;
+	color: #fff;
+}
+.search__inner {
+	padding: 155px 0 50px;
+	text-align: center;
+}
+.search__inner-title {
+	font-size: 48px;
+	font-weight: 700;
+	margin-bottom: 30px;
+}
+.search__inner-text {
+	font-size: 20px;
+	margin-bottom: 50px;
+}
+
+form {
+	position: relative;
+	max-width: 670px;
+	margin: 0 auto;
+}
+.search__inner-input {
+	border-radius: 4px;
+	box-shadow: 0px 1px 10px 0px rgba(124, 178, 64, 0.75);
+	width: 100%;
+	height: 56px;
+	outline: none;
+	border: none;
+	padding-left: 25px;
+	padding-right: 60px;
+	font-size: 14px;
+	color: $color-gray;
+	&::placeholder {
+		color: $color-gray;
+	}
+}
+button {
+	position: absolute;
+	border: none;
+	background-color: transparent;
+	right: 20px;
+	top: 17px;
+}
