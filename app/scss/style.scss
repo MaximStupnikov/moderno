@@ -107,10 +107,140 @@ form {
 		color: $color-gray;
 	}
 }
-button {
+.search__inner-btn {
 	position: absolute;
 	border: none;
 	background-color: transparent;
 	right: 20px;
 	top: 17px;
+}
+.products {
+	padding: 120px 0 110px;
+	background-color: $gray;
+}
+.products__title {
+	margin-bottom: 50px;
+}
+.products__inner-btn {
+	margin-bottom: 60px;
+	text-align: center;
+
+	button {
+		border: none;
+		background-color: #fff;
+		color: $bg;
+		font-size: 14px;
+		padding: 12px 21px;
+		cursor: pointer;
+		&.mixitup-control-active {
+			background-color: $red;
+			color: #fff;
+		}
+		& + button {
+			margin-left: 6px;
+		}
+	}
+}
+
+.products__inner-box {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.product__item {
+	width: 442px;
+	box-shadow: 0px 1px 2px 0px rgba(205, 214, 222, 0.75);
+	margin-bottom: 30px;
+	&-image {
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		min-height: 250px;
+		width: 100%;
+	}
+	&-content {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 26px 30px 14px;
+		min-height: 90px;
+		font-weight: 500;
+	}
+	&-name {
+		max-width: 310px;
+		margin-right: 10px;
+		a {
+			display: block;
+		}
+	}
+	&-title {
+		font-size: 18px;
+		color: $bg;
+		margin-bottom: 11px;
+	}
+	&-category {
+		font-size: 14px;
+		color: $green;
+	}
+	&-price {
+		font-weight: 700;
+		font-size: 20px;
+		color: $bg;
+	}
+	&-info {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		min-height: 70px;
+		padding: 10px 30px;
+		border-top: 1px solid #e7ecf2;
+	}
+	&-author {
+		display: flex;
+		align-items: center;
+		span {
+			font-size: 14px;
+			font-weight: 500;
+			color: $color-blue;
+		}
+		.avatar {
+			margin-right: 14px;
+			display: inline-block;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+			width: 30px;
+			height: 30px;
+			border-radius: 50%;
+		}
+	}
+	&-star {
+		font-size: 12px;
+		color: $bg;
+	}
+}
+.product__bottom-btn {
+	text-align: center;
+	button {
+		margin: 45px 5px 0;
+		box-shadow: 0px 1px 3px 0px rgba(204, 216, 228, 0.75);
+		color: $bg;
+		font-size: 16px;
+		font-weight: 400;
+		border: none;
+		background-color: #fff;
+		padding: 20px 32px;
+		cursor: pointer;
+		&.mixitup-control-active {
+			background-color: $red;
+			color: #fff;
+		}
+	}
+}
+.product-slider {
+	background-color: #fff;
+	padding: 120px 0;
+}
+.product-slider__title {
+	margin-bottom: 55px;
 }
